@@ -1,0 +1,22 @@
+live_config_reload = true
+
+# theme
+import = [ "~/.config/alacritty/themes/alacritty-theme/themes/dark_pastels.toml" ]
+
+[font]
+size = 16.0
+#AppleFontSmoothing = "default"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.85
+startup_mode = "Maximized"
+
+[window.padding]
+x = 18
+y = 16
