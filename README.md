@@ -3,6 +3,4 @@
 This repo contains:
 - bash/*
 - zsh/*
-- .vimrc
-- alacritty.toml
-- tmux.conf
+- apps_conf/*
