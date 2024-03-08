@@ -1,7 +1,8 @@
 # dotfiles
 
 This repo contains:
-- .bashrc
+- bash/*
+- zsh/*
 - .vimrc
 - alacritty.toml
 - tmux.conf
