@@ -15,5 +15,17 @@ PROMPT_COMMAND='__git_ps1 "\n\[\e[33m\]\w\[\e[0m\]" " \n> "'
 ### Aliases
 alias ls='ls --color'
 alias ll='ls -alh'
+alias lll='ls -alhR'
 alias cl='clear'
 alias v='nvim'
+alias p1="ssh abiskup@ptools1"
+alias p2="ssh abiskup@ptools2"
+alias pr1="ssh root@ptools1"
+alias pr2="ssh root@ptools2"
+alias tf="terraform"
+alias j3="ssh jump3"
+alias j4="ssh jump4"
+alias m1="ssh mtools1"
+alias dotf="cd ~/pers_repo/dotfiles/"
+alias proj="cd ~/pers_repo/Projects/"
+
