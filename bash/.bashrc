@@ -21,4 +21,4 @@ alias v='nvim'
 alias tf="terraform"
 alias dotf="cd ~/pers_repo/dotfiles/"
 alias proj="cd ~/pers_repo/Projects/"
-
+alias cat="bat"
