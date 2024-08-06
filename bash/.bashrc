@@ -1,9 +1,3 @@
-### Removin MacOS warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-### Adding /opt/homebrew/bin/ path
-export PATH=$PATH:/opt/homebrew/bin/
-
 ### Prompt
 source .git-prompt.sh
 #parse_git_branch() {
