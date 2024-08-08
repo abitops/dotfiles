@@ -1,3 +1,7 @@
 vim
 neovim
 bat
+tmux
+zsh
+oh-my-zsh
+p10k
