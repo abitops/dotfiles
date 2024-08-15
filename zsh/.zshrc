@@ -121,6 +121,10 @@ alias tf="terraform"
 alias dotf="cd ~/repos/privs/dotfiles/"
 alias proj="cd ~/repos/privs/Projects/"
 alias cat="bat"
+alias tmux="tmux -u"
+
+# ssh-agent
+eval `ssh-agent` > /dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
