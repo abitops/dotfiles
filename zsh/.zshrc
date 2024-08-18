@@ -120,6 +120,7 @@ alias v='nvim'
 alias tf="terraform"
 alias dotf="cd ~/repos/privs/dotfiles/"
 alias proj="cd ~/repos/privs/Projects/"
+alias vault="cd ~/repos/privs/ObsidianVault/"
 alias cat="bat"
 alias tmux="tmux -u"
 
