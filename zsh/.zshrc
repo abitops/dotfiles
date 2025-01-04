@@ -124,9 +124,25 @@ alias vault="cd ~/repos/privs/ObsidianVault/"
 alias scrs="cd ~/repos/privs/Scripts/"
 alias cat="bat"
 alias tmux="tmux -u"
+#volumes
+alias vu="pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+alias vd="pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+
+# disabling gpg key pass prompt
+export GPG_TTY=$(tty)
 
 # ssh-agent
 #eval `ssh-agent` > /dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# autostart of hyprland
+if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+fi
+
+# disabling sharing history
+setopt appendhistory
+setopt nosharehistory
+setopt noincappendhistory
