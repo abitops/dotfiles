@@ -15,7 +15,7 @@ sudo pacman -Syu --noconfirm
 
 # (2)
 echo -e "==> Installing all packages required for configuration"
-sudo pacman -S vim neovim alacritty zsh hyprland hyprpaper hyprlock waybar git curl ttf-firacode-nerd qutebrowser rofi pcmanfm --noconfirm
+sudo pacman -S vim neovim alacritty zsh hyprland hyprpaper hyprlock waybar git curl ttf-firacode-nerd qutebrowser rofi pcmanfm ttf-liberation ttf-liberation-mono-nerd bat --noconfirm
 echo -e "==> Installing Oh-My-Zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo -e "==> Installing PowerLevel10k"
@@ -23,7 +23,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 echo -e "==> Setting up yay"
 echo -e "=> Creating symlink"
-ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 echo -e "=> Cloning git repo"
 git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
@@ -46,6 +46,7 @@ echo -e "=> .vimrc"
 cp -v $dot_git_dir/apps_conf/.vimrc $HOME
 echo -e "=> alacritty"
 cp -v -R $dot_git_dir/apps_conf/.config/alacritty $HOME/.config
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 echo -e "=> hyprland+"
 cp -v -R $dot_git_dir/apps_conf/.config/hypr $HOME/.config
 echo -e "=> neovim"
@@ -56,6 +57,9 @@ echo -e "=> rofi"
 cp -v -R $dot_git_dir/apps_conf/.config/rofi $HOME/.config
 echo -e "=> waybar"
 cp -v -R $dot_git_dir/apps_conf/.config/waybar $HOME/.config
+
+echo -e "==> Creating .ssh directory"
+mkdir $HOME/.ssh
 
 # (4)
 echo -e "==> Starting hyprpaper and waybar services"

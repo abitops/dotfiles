@@ -21,4 +21,4 @@ y = 16
 live_config_reload = true
 
 # theme
-import = [ "~/.config/alacritty/themes/alacritty-theme/themes/gruvbox_dark.toml" ]
+import = [ "~/.config/alacritty/themes/themes/gruvbox_dark.toml" ]
