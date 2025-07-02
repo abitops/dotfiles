@@ -1,0 +1,27 @@
+
+[font]
+size = 14.0
+
+[font.normal]
+#family = "FiraCodeNerdFontMono"
+#family = "LiberationMono"
+family = "MesloLGS NF"
+style = "Regular"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.65
+startup_mode = "Maximized"
+
+[window.padding]
+x = 18
+y = 16
+
+[general]
+live_config_reload = true
+
+# theme
+#import = [ "~/.config/alacritty/themes/themes/gruvbox_dark.toml" ]
+import = [ "~/.config/alacritty/themes/themes/nord.toml" ]
+#import = [ "~/.config/alacritty/themes/themes/solarized_dark.toml" ]
